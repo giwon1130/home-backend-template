@@ -30,5 +30,7 @@ class ProjectControllerTest {
             .andExpect(jsonPath("$.data[0].category").value("Public Data / GIS"))
             .andExpect(jsonPath("$.data[0].repositoryUrl").value("https://github.com/giwon1130/emergency-room-backend"))
             .andExpect(jsonPath("$.data[0].docsUrl").value("https://github.com/giwon1130/emergency-room-frontend"))
+            .andExpect(jsonPath("$.data[2].name").value("AI Assistant API"))
+            .andExpect(jsonPath("$.data[2].repositoryUrl").value("https://github.com/giwon1130/giwon-assistant-api"))
     }
 }

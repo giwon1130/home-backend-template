@@ -30,14 +30,14 @@ class ProjectRepository {
         ),
         Project(
             id = "PROJECT-003",
-            name = "AI Assistant",
-            status = "PLANNING",
+            name = "AI Assistant API",
+            status = "BUILDING",
             category = "Productivity / AI",
-            summary = "아침 브리핑, 일정 관리, 뉴스 요약, 메모 정리를 자동화하는 개인용 AI 비서 프로젝트",
+            summary = "아침 브리핑, 일정 요약, 아이디어 정리를 제공하는 개인용 AI 비서 API",
             liveUrl = null,
-            repositoryUrl = null,
+            repositoryUrl = "https://github.com/giwon1130/giwon-assistant-api",
             docsUrl = "https://www.notion.so/dev-giwon/ce2318d46f3a4b66894ad04d1b20d986",
-            tags = listOf("OpenAI", "Automation", "Notion", "Calendar")
+            tags = listOf("Kotlin", "Spring Boot", "OpenAI", "Automation", "Calendar")
         ),
     )
 
