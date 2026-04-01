@@ -12,8 +12,9 @@ class ProjectRepository {
             status = "LIVE",
             category = "Public Data / GIS",
             summary = "공공 응급의료 API와 PostGIS 기반 반경 조회를 이용해 주변 응급실 병상 현황을 지도와 리스트로 제공하는 서비스",
-            primaryUrl = "https://github.com/giwon1130/emergency-room-frontend",
+            liveUrl = null,
             repositoryUrl = "https://github.com/giwon1130/emergency-room-backend",
+            docsUrl = "https://github.com/giwon1130/emergency-room-frontend",
             tags = listOf("React", "Kotlin", "Spring Boot", "PostGIS", "Redis", "Leaflet")
         ),
         Project(
@@ -22,8 +23,9 @@ class ProjectRepository {
             status = "BUILDING",
             category = "Portfolio / Platform",
             summary = "여러 개인 프로젝트와 공개 저장소를 한 곳에서 소개하고 연결하는 공개용 허브 서비스",
-            primaryUrl = "https://github.com/giwon1130/home-frontend-template",
-            repositoryUrl = "https://github.com/giwon1130/home-backend-template",
+            liveUrl = null,
+            repositoryUrl = "https://github.com/giwon1130/giwon-home-api",
+            docsUrl = "https://github.com/giwon1130/giwon-home",
             tags = listOf("React", "Vite", "Kotlin", "Spring Boot")
         ),
         Project(
@@ -32,8 +34,9 @@ class ProjectRepository {
             status = "PLANNING",
             category = "Productivity / AI",
             summary = "아침 브리핑, 일정 관리, 뉴스 요약, 메모 정리를 자동화하는 개인용 AI 비서 프로젝트",
-            primaryUrl = "https://www.notion.so/dev-giwon/ce2318d46f3a4b66894ad04d1b20d986",
+            liveUrl = null,
             repositoryUrl = null,
+            docsUrl = "https://www.notion.so/dev-giwon/ce2318d46f3a4b66894ad04d1b20d986",
             tags = listOf("OpenAI", "Automation", "Notion", "Calendar")
         ),
     )

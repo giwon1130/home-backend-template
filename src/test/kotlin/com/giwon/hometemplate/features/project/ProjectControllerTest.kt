@@ -28,6 +28,7 @@ class ProjectControllerTest {
             .andExpect(jsonPath("$.data.length()").value(3))
             .andExpect(jsonPath("$.data[0].id").value("PROJECT-001"))
             .andExpect(jsonPath("$.data[0].category").value("Public Data / GIS"))
-            .andExpect(jsonPath("$.data[0].primaryUrl").value("https://github.com/giwon1130/emergency-room-frontend"))
+            .andExpect(jsonPath("$.data[0].repositoryUrl").value("https://github.com/giwon1130/emergency-room-backend"))
+            .andExpect(jsonPath("$.data[0].docsUrl").value("https://github.com/giwon1130/emergency-room-frontend"))
     }
 }

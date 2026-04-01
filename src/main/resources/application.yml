@@ -1,6 +1,6 @@
 spring:
   application:
-    name: home-backend-template
+    name: giwon-home-api
 
 server:
   port: ${SERVER_PORT:8081}
