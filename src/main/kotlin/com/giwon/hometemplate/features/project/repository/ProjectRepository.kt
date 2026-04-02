@@ -55,11 +55,11 @@ class ProjectRepository {
             name = "TripMemo",
             status = "BUILDING",
             category = "Travel / Memo",
-            summary = "여행(trip), 장소, 메모를 함께 묶고 상세/타임라인 조회까지 제공하는 여행 기록 서비스 백엔드",
+            summary = "여행(trip), 장소, 메모를 함께 묶고 검색·필터·대시보드·타임라인 조회를 제공하는 여행 기록 서비스 백엔드",
             liveUrl = null,
             repositoryUrl = "https://github.com/giwon1130/TripMemo",
             docsUrl = null,
-            tags = listOf("Java", "Spring Boot", "Spring Security", "PostgreSQL", "JWT", "Travel")
+            tags = listOf("Java", "Spring Boot", "Spring Security", "PostgreSQL", "JWT", "Travel", "Dashboard", "Search")
         ),
     )
 
