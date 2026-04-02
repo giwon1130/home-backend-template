@@ -44,11 +44,11 @@ class ProjectRepository {
             name = "HomeHarmony",
             status = "BUILDING",
             category = "Housing / Decision Support",
-            summary = "입지, 예산, 출퇴근 기준을 함께 비교해 주거 선택을 돕는 프론트엔드 MVP",
+            summary = "입지, 예산, 출퇴근 기준과 생활권 시각화를 함께 제공해 주거 선택을 돕는 프론트엔드 MVP",
             liveUrl = "http://127.0.0.1:4174",
             repositoryUrl = "https://github.com/giwon1130/HomeHarmony",
             docsUrl = null,
-            tags = listOf("React", "TypeScript", "Vite", "Housing", "Comparison")
+            tags = listOf("React", "TypeScript", "Vite", "Housing", "Comparison", "Visualization")
         ),
         Project(
             id = "PROJECT-005",
