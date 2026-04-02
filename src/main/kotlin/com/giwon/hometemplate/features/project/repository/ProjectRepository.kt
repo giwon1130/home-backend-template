@@ -50,6 +50,17 @@ class ProjectRepository {
             docsUrl = null,
             tags = listOf("React", "TypeScript", "Vite", "Housing", "Comparison")
         ),
+        Project(
+            id = "PROJECT-005",
+            name = "TripMemo",
+            status = "BUILDING",
+            category = "Travel / Memo",
+            summary = "JWT 인증 기반 사용자 구조 위에 여행 메모 CRUD를 구현한 여행 기록 서비스 백엔드",
+            liveUrl = null,
+            repositoryUrl = "https://github.com/giwon1130/TripMemo",
+            docsUrl = null,
+            tags = listOf("Java", "Spring Boot", "Spring Security", "PostgreSQL", "JWT")
+        ),
     )
 
     fun findAll(): List<Project> = projects
