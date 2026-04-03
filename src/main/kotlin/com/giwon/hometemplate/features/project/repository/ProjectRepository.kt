@@ -61,6 +61,17 @@ class ProjectRepository {
             docsUrl = null,
             tags = listOf("Java", "Spring Boot", "Spring Security", "PostgreSQL", "JWT", "Travel", "Dashboard", "Search")
         ),
+        Project(
+            id = "PROJECT-006",
+            name = "MetroPulse",
+            status = "BUILDING",
+            category = "Transit / Public Data",
+            summary = "실시간 지하철 도착정보와 30분 단위 평균 혼잡도를 함께 제공하고, 향후 실시간 혼잡도 provider 교체를 목표로 하는 서비스",
+            liveUrl = null,
+            repositoryUrl = "https://github.com/giwon1130/metro-pulse-backend",
+            docsUrl = "https://github.com/giwon1130/metro-pulse-frontend",
+            tags = listOf("Kotlin", "Spring Boot", "React", "Transit", "OpenAPI", "Congestion")
+        ),
     )
 
     fun findAll(): List<Project> = projects
