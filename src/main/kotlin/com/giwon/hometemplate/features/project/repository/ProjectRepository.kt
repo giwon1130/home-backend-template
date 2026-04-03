@@ -72,6 +72,17 @@ class ProjectRepository {
             docsUrl = "https://github.com/giwon1130/metro-pulse-frontend",
             tags = listOf("Kotlin", "Spring Boot", "React", "Vite", "Transit", "OpenAPI", "Congestion")
         ),
+        Project(
+            id = "PROJECT-007",
+            name = "ShelterNow",
+            status = "BUILDING",
+            category = "Safety / Public Data",
+            summary = "현재 위치 기준으로 가까운 무더위쉼터, 한파쉼터, 민방위대피소, 임시주거시설을 탐색하고 지도형 UI와 리스트로 함께 제공하는 공공 안전 서비스",
+            liveUrl = null,
+            repositoryUrl = "https://github.com/giwon1130/shelter-now-backend",
+            docsUrl = "https://github.com/giwon1130/shelter-now-frontend",
+            tags = listOf("Kotlin", "Spring Boot", "React", "Vite", "Safety", "Shelter", "Public Data", "GIS")
+        ),
     )
 
     fun findAll(): List<Project> = projects

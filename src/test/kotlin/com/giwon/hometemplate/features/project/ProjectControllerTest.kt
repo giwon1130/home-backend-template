@@ -25,7 +25,7 @@ class ProjectControllerTest {
         mockMvc.perform(get("/api/projects"))
             .andExpect(status().isOk)
             .andExpect(jsonPath("$.success").value(true))
-            .andExpect(jsonPath("$.data.length()").value(6))
+            .andExpect(jsonPath("$.data.length()").value(7))
             .andExpect(jsonPath("$.data[0].id").value("PROJECT-001"))
             .andExpect(jsonPath("$.data[0].category").value("Public Data / GIS"))
             .andExpect(jsonPath("$.data[0].repositoryUrl").value("https://github.com/giwon1130/emergency-room-backend"))
@@ -41,5 +41,7 @@ class ProjectControllerTest {
             .andExpect(jsonPath("$.data[4].repositoryUrl").value("https://github.com/giwon1130/TripMemo"))
             .andExpect(jsonPath("$.data[5].name").value("MetroPulse"))
             .andExpect(jsonPath("$.data[5].repositoryUrl").value("https://github.com/giwon1130/metro-pulse-backend"))
+            .andExpect(jsonPath("$.data[6].name").value("ShelterNow"))
+            .andExpect(jsonPath("$.data[6].repositoryUrl").value("https://github.com/giwon1130/shelter-now-backend"))
     }
 }
