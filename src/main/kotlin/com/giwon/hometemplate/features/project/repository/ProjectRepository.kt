@@ -63,6 +63,17 @@ class ProjectRepository {
         ),
         Project(
             id = "PROJECT-006",
+            name = "RouteOps",
+            status = "BUILDING",
+            category = "Mobility / Operations AI",
+            summary = "호출형 이동 서비스 운영자를 위해 권역 수요, 차량 상태, 재배치 추천, 시나리오 기반 운영 브리핑을 지도 중심으로 제공하는 DRT 운영 콘솔",
+            liveUrl = "http://localhost:4173",
+            repositoryUrl = "https://github.com/giwon1130/route-ops-api",
+            docsUrl = "https://github.com/giwon1130/route-ops-web",
+            tags = listOf("Kotlin", "Spring Boot", "React", "Vite", "Leaflet", "DRT", "Operations", "Simulation", "AI")
+        ),
+        Project(
+            id = "PROJECT-007",
             name = "MetroPulse",
             status = "BUILDING",
             category = "Transit / Public Data",
@@ -73,7 +84,7 @@ class ProjectRepository {
             tags = listOf("Kotlin", "Spring Boot", "React", "Vite", "Transit", "OpenAPI", "Congestion")
         ),
         Project(
-            id = "PROJECT-007",
+            id = "PROJECT-008",
             name = "ShelterNow",
             status = "BUILDING",
             category = "Safety / Public Data",
