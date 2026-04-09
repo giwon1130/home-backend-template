@@ -25,7 +25,7 @@ class ProjectControllerTest {
         mockMvc.perform(get("/api/projects"))
             .andExpect(status().isOk)
             .andExpect(jsonPath("$.success").value(true))
-            .andExpect(jsonPath("$.data.length()").value(8))
+            .andExpect(jsonPath("$.data.length()").value(9))
             .andExpect(jsonPath("$.data[0].id").value("PROJECT-001"))
             .andExpect(jsonPath("$.data[0].category").value("Public Data / GIS"))
             .andExpect(jsonPath("$.data[0].repositoryUrl").value("https://github.com/giwon1130/emergency-room-backend"))
@@ -46,5 +46,9 @@ class ProjectControllerTest {
             .andExpect(jsonPath("$.data[6].repositoryUrl").value("https://github.com/giwon1130/metro-pulse-backend"))
             .andExpect(jsonPath("$.data[7].name").value("ShelterNow"))
             .andExpect(jsonPath("$.data[7].repositoryUrl").value("https://github.com/giwon1130/shelter-now-backend"))
+            .andExpect(jsonPath("$.data[8].name").value("SignalDesk"))
+            .andExpect(jsonPath("$.data[8].liveUrl").value("http://localhost:4180"))
+            .andExpect(jsonPath("$.data[8].repositoryUrl").value("https://github.com/giwon1130/signal-desk"))
+            .andExpect(jsonPath("$.data[8].docsUrl").value("https://github.com/giwon1130/signal-desk-web"))
     }
 }
