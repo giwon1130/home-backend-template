@@ -79,6 +79,7 @@ src/main/kotlin/com/giwon/hometemplate
 - This template uses in-memory repositories for demo speed.
 - 공개 허브/포트폴리오용 API를 먼저 제공하는 구조다.
 - 허브에 연결할 서비스가 늘어나면 `ProjectRepository`에 링크만 추가하는 방식으로 확장한다.
+- `SignalDesk`처럼 웹/API/모바일이 분리된 서비스도 하나의 프로젝트 카드로 묶어 노출한다.
 
 ## Next Extensions
 - profile/projects 데이터를 파일 또는 DB로 분리

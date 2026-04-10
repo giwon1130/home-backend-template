@@ -99,11 +99,11 @@ class ProjectRepository {
             name = "SignalDesk",
             status = "LIVE",
             category = "Finance / Market Intelligence",
-            summary = "한국/미국 시장을 분리해 지수 차트, 수급, 공포지표, 뉴스 군집화, 포트폴리오, AI 추천, 모의투자까지 한 흐름으로 제공하는 주식 인텔리전스 서비스",
+            summary = "한국/미국 시장을 분리해 지수 차트, 수급, 공포지표, 뉴스 군집화, 포트폴리오, AI 추천, 모의투자를 웹과 모바일 컴패니언 앱으로 함께 제공하는 시장 인텔리전스 서비스",
             liveUrl = "http://localhost:4180",
             repositoryUrl = "https://github.com/giwon1130/signal-desk",
             docsUrl = "https://github.com/giwon1130/signal-desk-web",
-            tags = listOf("Kotlin", "Spring Boot", "React", "Vite", "ECharts", "Finance", "Market Data", "AI")
+            tags = listOf("Kotlin", "Spring Boot", "React", "Expo", "Finance", "Market Data", "AI", "Mobile")
         ),
     )
 
