@@ -1,10 +1,13 @@
 package com.giwon.hometemplate.features.project.repository
 
+import com.giwon.hometemplate.features.project.config.PublicProjectUrlProperties
 import com.giwon.hometemplate.features.project.model.Project
 import org.springframework.stereotype.Repository
 
 @Repository
-class ProjectRepository {
+class ProjectRepository(
+    private val publicProjectUrlProperties: PublicProjectUrlProperties,
+) {
     private val projects = listOf(
         Project(
             id = "PROJECT-001",
@@ -25,7 +28,7 @@ class ProjectRepository {
             category = "Portfolio / Platform",
             headline = null,
             summary = "여러 개인 프로젝트와 공개 저장소를 한 곳에서 소개하고 연결하는 공개용 허브 서비스",
-            liveUrl = "http://localhost:4173",
+            liveUrl = publicProjectUrlProperties.home,
             repositoryUrl = "https://github.com/giwon1130/giwon-home-api",
             docsUrl = "https://github.com/giwon1130/giwon-home",
             tags = listOf("React", "Vite", "Kotlin", "Spring Boot")
@@ -37,7 +40,7 @@ class ProjectRepository {
             category = "Productivity / AI",
             headline = null,
             summary = "아침 브리핑 자동 생성, 뉴스/날씨 요약, 아이디어 저장과 브리핑 이력 관리를 제공하는 개인용 AI 비서 API",
-            liveUrl = "http://localhost:4173/assistant",
+            liveUrl = publicProjectUrlProperties.assistant,
             repositoryUrl = "https://github.com/giwon1130/giwon-assistant-api",
             docsUrl = "https://www.notion.so/dev-giwon/ce2318d46f3a4b66894ad04d1b20d986",
             tags = listOf("Kotlin", "Spring Boot", "OpenAI", "Automation", "Calendar", "RSS", "JPA", "Scheduler")
@@ -49,7 +52,7 @@ class ProjectRepository {
             category = "Housing / Decision Support",
             headline = null,
             summary = "직주근접·예산·가족형 추천 모드와 생활권 추천 점수를 함께 제공하는 주거 선택 프론트엔드 MVP",
-            liveUrl = "http://127.0.0.1:4174",
+            liveUrl = publicProjectUrlProperties.homeHarmony,
             repositoryUrl = "https://github.com/giwon1130/HomeHarmony",
             docsUrl = null,
             tags = listOf("React", "TypeScript", "Vite", "Leaflet", "Housing", "Comparison", "Scoring", "Recommendation")
@@ -73,7 +76,7 @@ class ProjectRepository {
             category = "Mobility / Operations AI",
             headline = null,
             summary = "호출형 이동 서비스 운영자를 위해 권역 수요, 차량 상태, 재배치 추천, 시나리오 기반 운영 브리핑을 지도 중심으로 제공하는 DRT 운영 콘솔",
-            liveUrl = "http://localhost:4173",
+            liveUrl = publicProjectUrlProperties.routeOps,
             repositoryUrl = "https://github.com/giwon1130/route-ops-api",
             docsUrl = "https://github.com/giwon1130/route-ops-web",
             tags = listOf("Kotlin", "Spring Boot", "React", "Vite", "Leaflet", "DRT", "Operations", "Simulation", "AI")
@@ -109,7 +112,7 @@ class ProjectRepository {
             category = "Finance / Market Intelligence",
             headline = "한국·미국 시장 시그널을 웹과 모바일로 함께 읽는 개인용 시장 인텔리전스 허브",
             summary = "한국/미국 시장을 분리해 지수 차트, 수급, 공포지표, 뉴스 군집화, 포트폴리오, AI 추천, 모의투자를 웹과 모바일 컴패니언 앱으로 함께 제공하는 시장 인텔리전스 서비스",
-            liveUrl = "http://localhost:4180",
+            liveUrl = publicProjectUrlProperties.signalDesk,
             repositoryUrl = "https://github.com/giwon1130/signal-desk",
             docsUrl = "https://github.com/giwon1130/signal-desk-web",
             tags = listOf("Kotlin", "Spring Boot", "React", "Expo", "Finance", "Market Data", "AI", "Mobile")

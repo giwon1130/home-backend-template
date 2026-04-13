@@ -4,3 +4,21 @@ spring:
 
 server:
   port: ${SERVER_PORT:8081}
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health
+  endpoint:
+    health:
+      show-details: never
+
+app:
+  public:
+    urls:
+      home: ${PUBLIC_URL_HOME:http://localhost:4173}
+      assistant: ${PUBLIC_URL_ASSISTANT:http://localhost:4173/assistant}
+      home-harmony: ${PUBLIC_URL_HOME_HARMONY:http://127.0.0.1:4174}
+      route-ops: ${PUBLIC_URL_ROUTE_OPS:http://localhost:4173}
+      signal-desk: ${PUBLIC_URL_SIGNAL_DESK:http://localhost:4180}
