@@ -114,7 +114,7 @@ class ProjectRepository(
             summary = "한국/미국 시장을 분리해 지수 차트, 수급, 공포지표, 뉴스 군집화, 포트폴리오, AI 추천, 모의투자와 함께 Pentagon Pizza Index, Policy Buzz, Bar Counter-Signal 같은 실험 대체지표까지 웹과 모바일 컴패니언 앱으로 제공하는 시장 인텔리전스 서비스",
             liveUrl = publicProjectUrlProperties.signalDesk,
             repositoryUrl = "https://github.com/giwon1130/signal-desk",
-            docsUrl = "https://github.com/giwon1130/signal-desk-web",
+            docsUrl = "https://github.com/giwon1130/signal-desk-app",
             tags = listOf("Kotlin", "Spring Boot", "React", "Expo", "Finance", "Market Data", "AI", "Mobile")
         ),
     )
