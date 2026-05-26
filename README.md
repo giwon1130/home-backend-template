@@ -10,10 +10,11 @@
 
 ## What Included
 - `GET /api/profile`: 공개 프로필 정보 제공
-- `GET /api/projects`: 공개 프로젝트 카탈로그 제공
+- `GET /api/projects`: 공개 프로젝트 카탈로그 제공 (현재 11개 — Emergency Room, Home Hub, Assistant API, HomeHarmony, TripMemo, RouteOps, MetroPulse, ShelterNow, SignalDesk, BabyLog, Codie)
 - 프로젝트별 `liveUrl / repositoryUrl / docsUrl` 링크 제공
 - 기존 로그인 API는 템플릿 용도로 유지
 - Feature modules use `controller -> service -> parser -> repository` layering
+- 카탈로그는 `ProjectRepository.kt` 의 정적 리스트 + `PublicProjectUrlProperties` 환경변수로 liveUrl 외부화
 
 ## Quick Start
 1. Copy env sample.
@@ -84,7 +85,7 @@ src/main/kotlin/com/giwon/hometemplate
 - This template uses in-memory repositories for demo speed.
 - 공개 허브/포트폴리오용 API를 먼저 제공하는 구조다.
 - 허브에 연결할 서비스가 늘어나면 `ProjectRepository`에 링크만 추가하는 방식으로 확장한다.
-- `SignalDesk`처럼 웹/API/모바일이 분리된 서비스도 하나의 프로젝트 카드로 묶어 노출한다.
+- `SignalDesk`처럼 웹/API/모바일이 분리된 서비스도 하나의 프로젝트 카드로 묶어 노출한다. `BabyLog`(api+app+compose), `Codie`(api+app 모노레포)도 같은 방식으로 등록됨.
 - 프로젝트 `liveUrl`은 `PUBLIC_URL_*` 환경변수로 외부 주소와 로컬 주소를 분리할 수 있다.
 
 ## Next Extensions
