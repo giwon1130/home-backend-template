@@ -110,12 +110,36 @@ class ProjectRepository(
             name = "SignalDesk",
             status = "LIVE",
             category = "Finance / Market Intelligence",
-            headline = "한국·미국 시장 시그널과 Pizza·Bar 실험 대체지표를 웹·모바일로 함께 읽는 개인용 시장 인텔리전스 허브",
-            summary = "한국/미국 시장을 분리해 지수 차트, 수급, 공포지표, 뉴스 군집화, 포트폴리오, AI 추천, 모의투자와 함께 Pentagon Pizza Index, Policy Buzz, Bar Counter-Signal 같은 실험 대체지표까지 웹과 모바일 컴패니언 앱으로 제공하는 시장 인텔리전스 서비스",
+            headline = "한·미 시장을 차트·수급·뉴스 군집화와 합성 위험도(PizzINT+VIX+뉴스 종합 1~10)로 읽는 개인용 시장 인텔리전스",
+            summary = "한국/미국 시장을 분리해 지수 차트, 수급, 공포지표(VIX), 뉴스 군집화, AI 추천과 함께 PizzINT·VIX·뉴스 키워드를 종합한 1~10 합성 위험도(score≥8 시 푸시 알림)를 웹과 모바일 컴패니언 앱으로 제공하는 시장 인텔리전스 서비스. 웹은 signal-desk-app/src/web Expo 빌드로 통합 운영",
             liveUrl = publicProjectUrlProperties.signalDesk,
             repositoryUrl = "https://github.com/giwon1130/signal-desk",
             docsUrl = "https://github.com/giwon1130/signal-desk-app",
-            tags = listOf("Kotlin", "Spring Boot", "React", "Expo", "Finance", "Market Data", "AI", "Mobile")
+            tags = listOf("Kotlin", "Spring Boot", "React", "Expo", "Finance", "Market Data", "Composite Risk", "AI", "Mobile")
+        ),
+        Project(
+            id = "PROJECT-010",
+            name = "BabyLog",
+            status = "BUILDING",
+            category = "Family / Daily Life",
+            headline = "신생아 수유·기저귀·수면·성장을 1탭으로 기록하고 가족과 실시간 공유하는 육아 일지 앱",
+            summary = "수유·기저귀·수면·성장을 1탭으로 기록하고, SSE+Expo Push로 가족 간 실시간 공유, 일일 요약 푸시, iOS 위젯, 울음 분석을 제공하는 신생아 기록 앱. 현재 TestFlight 베타 운영 중",
+            liveUrl = null,
+            repositoryUrl = "https://github.com/giwon1130/baby-log-api",
+            docsUrl = "https://github.com/giwon1130/baby-log-app",
+            tags = listOf("Kotlin", "Spring Boot", "React Native", "Expo", "TestFlight", "Family", "Realtime", "Widget")
+        ),
+        Project(
+            id = "PROJECT-011",
+            name = "Codie",
+            status = "BUILDING",
+            category = "Fashion / Personal Recommendation",
+            headline = "옷장 디지털화와 날씨·퍼스널컬러·TPO를 종합해 오늘의 코디를 추천하는 AI 코디 앱",
+            summary = "옷장을 디지털화하고 날씨·퍼스널컬러·나이·캘린더(TPO)를 종합해 오늘의 코디를 추천하는 앱. Phase 1 MVP → Phase 2 캘린더+TPO → Phase 3 커머스 제휴 로드맵. 백엔드는 Kotlin/Spring Boot, 클라이언트는 RN+Expo 모바일 + Next.js 웹 모노레포",
+            liveUrl = null,
+            repositoryUrl = "https://github.com/giwon1130/codie-api",
+            docsUrl = "https://github.com/giwon1130/codie-app",
+            tags = listOf("Kotlin", "Spring Boot", "React Native", "Expo", "Next.js", "Monorepo", "Fashion", "Recommendation")
         ),
     )
 
